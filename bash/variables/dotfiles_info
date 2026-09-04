@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Displays information on dotfiles
+
+dotfiles_dir="$HOME/dotfiles"
+count_dotfiles=$(ls "$dotfiles_dir" | wc -l)
+today=$(date +%Y-%m-%d)
+
+echo "=== My Dotfiles Setup ==="
+echo "Dotfiles location: $dotfiles_dir"
+echo "Number of dotfiles: $count_dotfiles"
+echo "Dotfiles owner: $USER"
+echo "Date: $today" 

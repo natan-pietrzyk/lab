@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#This script uses default values if the ones are not provided during execution 
+
+name="${1:-Unnamed}"
+log_level="${LOG_LEVEL:-info}"
+echo "Hello, $name (log: $log_level)" 

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#This script uses for loop and greets the users inside the loop. 
+
+for name in Natan Bob Charlie Caroline Alice; do
+    echo "Greetings, $name"
+done

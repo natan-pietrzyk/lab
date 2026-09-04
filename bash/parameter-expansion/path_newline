@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#This script uses search and replace  parameter expansion to display $PATH from new line.
+
+echo "${PATH//:/$'\n'}"

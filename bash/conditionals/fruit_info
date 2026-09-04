@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#This script takes a frut name and tells you its color.
+
+if [[ -z "$1" || "$1" == "--help" ]]; then
+   echo "Usage: $0 <apple>, <banana> or <kiwi>"
+   exit 1
+fi
+
+case $1 in
+     apple)
+         echo "Apples are red or green"
+         ;;
+     banana)
+         echo "Bananas are yellow or green"
+         ;;
+     kiwi)
+         echo "Kiwis are brown"
+         ;;
+     *)  
+         echo "Unknown fruit. Usage: $0 <apple>, <banana> or <kiwi>"
+         exit 1
+         ;;
+esac
+ 

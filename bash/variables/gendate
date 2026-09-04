@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#Command Substitution example - generates today's date
+
+gendate=$(date +%Y-%m-%d)
+
+echo "$gendate"
+

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#This script prints numbered tasks based on inserted array.
+
+print_numbered() {
+    local items=("$@")
+    local i=1
+    for item in "${items[@]}"; do
+        echo "$i. $item"
+        ((i++))
+    done
+}
+
+
+tasks=("Buy milk" "Walk the dog" "Write a bash script")
+print_numbered "${tasks[@]}"
+

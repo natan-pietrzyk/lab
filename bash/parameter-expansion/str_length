@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#This script checks the length of provided password
+
+password="supersecretpass"
+echo "Length: ${#password}"
+
+#15
+
+
+
+if [[ ${#password} -lt 10 ]]; then
+    echo "Password is too short"
+    exit 1
+fi

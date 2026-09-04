@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#This script uses function that checks if the number is even. Then it uses functions exit code in if statement. 
+
+is_even() {
+   local num="$1"
+   (( num % 2 == 0 ))
+}
+
+
+if is_even 4; then
+    echo "4 is even"
+fi
+

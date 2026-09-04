@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#Displays the file parts taken from it's complete path.
+
+fileloc="/home/user/file.tar.gz"
+
+filename="${fileloc##*/}"
+directory="${fileloc%/*}"
+extension="${fileloc#*.}"
+basename="${filename//.*}"
+
+
+echo "Filename: $filename"
+echo "Directory: $directory"
+echo "Extension: $extension"
+echo "Basename: $basename"

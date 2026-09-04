@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#This file processes specific fields from the redirected file as input.
+# /etc/passwd format: user:x:uid:gid:info:home:shell
+
+while IFS=: read -r user _ uid gid _ home shell; do
+    echo "$user (UID: $uid) uses $shell"
+done < /etc/passwd
+
+#IFS=: sets field separator to colon
+#_ is a throwaway variable for fields we don't want to use or don't need.

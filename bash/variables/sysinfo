@@ -2,7 +2,9 @@
 
 # Description: Displays system information
 
+
 echo "=== System Information =="
+echo "User: $USER"
 echo "Hostname: $(hostname)"
 echo "Date: $(date)"
 echo "Kernel: $(uname -r)"

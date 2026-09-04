@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#This script uses parameter expansion to case the variable. 
+
+name="hello world"
+
+echo "${name^} I'm capitalized."
+echo "${name^^} I'm uppercased"
+echo "${name,,} I'm lowercased."

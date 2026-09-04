@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Get git branch
+
+branch=$(git branch --show-current)
+
+echo "$branch"
