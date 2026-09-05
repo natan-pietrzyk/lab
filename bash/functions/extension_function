@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#This script uses function that get us the file extension. It returns data instead of exit code, because it stores the output in a variable and then int's being echo'ed. 
+#This script uses function that get us the file extension. It returns data instead of exit code, because it stores the output in a variable and then it's being echo'ed. 
 
 
 get_extension() {
