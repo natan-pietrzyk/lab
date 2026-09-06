@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#This script uses a function that creates a symlink and uses it on an array storing my dotfiles. 
+
+link_file() {
+    local src="$1"
+    local dst="$2"
+
+    ln -sf "$src" "$dst"
+    echo "Linked at: $dst"
+}
+
+dotfiles=("vimrc" "bashrc")
+
+for file in "${dotfiles[@]}"; do
+ link_file "$HOME/dotfiles/$file" "$HOME/.$file"
+done
+
+echo "Done!"
+
